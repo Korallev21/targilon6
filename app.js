@@ -1,5 +1,5 @@
 import { createServer } from "http";
-const server = createServer((request, response) => {
+createServer((request, response) => {
+ response.statusCode = 404;
  response.end("Hello world");
-});
-server.listen(80);
+}).listen(80);
